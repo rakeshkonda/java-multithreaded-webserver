@@ -1,0 +1,27 @@
+<!-- https://git.heroku.com/home-automation-app.git -->
+<!DOCTYPE html>
+<html>
+ <head>
+  <link rel="stylesheet" type="text/css" href="css/control-panel.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/home-automation.js"></script>
+ </head>
+<body>
+<div id="control-panel">
+  <p>Control Panel</p>
+  <div id="lights-status" class="status"></div>
+  <div id="curtain-status" class="status"></div>
+  <div id="temp-status" class="status"></div>  
+  
+  <hr size=1/>
+  
+  <button id="lights">Lights</button>
+  <button id="curtain">Curtains</button>
+  
+  <br/>
+  
+  <input id="temp-desired" type="text" placeholder=""/> &deg;F
+  <button id="temp">Set Thermostat</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+body {
+  background: #20262E;
+  padding: 20px;
+  font-family: Helvetica;
+}
+
+
+#control-panel {
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 16px;
+  text-align: center;
+  transition: all 0.2s;
+  margin: 0 auto;
+  width: 300px;
+}
+
+#control-panel .status {
+  display: inline-block;
+  border: 1px solid #333;  
+  padding: 7px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.filled {
+  background-color: #efefef;
+}
+
+#control-panel input {
+  font-size: 15px;
+  height: 25px;
+  width: 50px;
+  text-align: right;
+  padding: 3px;
+}
+
+button {
+  background: #0084ff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 14px;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
