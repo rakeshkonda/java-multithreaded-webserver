@@ -15,9 +15,10 @@ import java.util.StringTokenizer;
  *
  * References:
  * HTTP “Connection: keep-alive” - https://blog.insightdatascience.com/learning-about-the-http-connection-keep-alive-header-7ebe0efa209d
+ * https://en.wikipedia.org/wiki/HTTP_persistent_connection
  */
 public class RequestHandler implements Runnable {
-    private static final org.slf4j.Logger LOGGER = LoggerFactory.getLogger(WebServer.class);
+    private static final org.slf4j.Logger LOGGER = LoggerFactory.getLogger(RequestHandler.class);
     private static final File WEBAPP_BASE_DIR = new File("src/webapp");
     private static final String DEFAULT_FILE = "index.html";
     private static final String FILE_NOT_FOUND_PAGE = WEBAPP_BASE_DIR + "/404.html";
@@ -105,6 +106,7 @@ public class RequestHandler implements Runnable {
 
         dataOut.write(fileData, 0, fileLength);
         dataOut.flush();
+        LOGGER.info("Serving the Resource:{}, FileLength: {}, ContentType: {}", sourceFilePath, fileLength, contentMimeType);
     }
 
     private void closeIO(BufferedReader incomingRequest, String httpVersion, boolean connectionKeepAlive) {

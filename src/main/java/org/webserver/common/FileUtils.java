@@ -12,6 +12,10 @@ public class FileUtils {
             return "text/html";
         else if (fileRequested.endsWith(".css"))
             return "text/css";
+        else if (fileRequested.toLowerCase().endsWith(".gif"))
+            return "image/gif";
+        else if (fileRequested.toLowerCase().endsWith(".jpg"))
+            return "image/jpeg";
         else
             return "text/plain";
     }

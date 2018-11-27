@@ -11,6 +11,8 @@ import java.util.concurrent.Executors;
  * A Multi-Threaded Java Web Server capable of processing multiple simultaneous service requests in parallel.
  *
  * References:
+ * http://www.cs.bu.edu/fac/matta/Teaching/CS552/F99/proj4/
+ * https://www.shubhsblog.com/programming/multithreaded-webserver-java.html
  */
 public class WebServer {
     private static final org.slf4j.Logger LOGGER = LoggerFactory.getLogger(WebServer.class);
