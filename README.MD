@@ -15,6 +15,8 @@ This project is an implementation of a Java based multi-threaded Web Server, cap
     * or download it from the source control github `https://github.com/rakeshkonda/java-multithreaded-webserver`
 * cd `<source folder>`
 * Run the command `mvn exec:java`
+* Go to a browser and hit the url 
+    * http://localhost:8080
        
 
 ### References
